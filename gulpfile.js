@@ -3,7 +3,10 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   del = require('del'),
   minifyHTML = require('gulp-minify-html'),
-  minifyCSS = require('gulp-minify-css');
+  minifyCSS = require('gulp-minify-css'),
+  karma = require('karma').server,
+  gulp = require('gulp'),
+  ghPages = require('gulp-gh-pages');
 
 gulp.task('minify', function() {
   gulp.src(['!assets/js/*.min.js', 'assets/js/*.js'])
@@ -36,5 +39,10 @@ gulp.task('clean', function(cb) {
 
 gulp.task('default', function() {
   gulp.src([])
-    
+
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./minified/**/*')
+    .pipe(ghPages());
 });

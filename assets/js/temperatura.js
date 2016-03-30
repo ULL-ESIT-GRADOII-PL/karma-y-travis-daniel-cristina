@@ -36,7 +36,7 @@
       return (aux + 273.15);
     };
   }
-  
+
   Farenheit.prototype = new Temperatura();
   Farenheit.prototype.constructor = Farenheit;
 
@@ -52,12 +52,11 @@
       return (aux + 32);
     };
   }
-  
+
   Kelvin.prototype = new Temperatura();
   Kelvin.prototype.constructor = Kelvin;
 
-  exports.Temperatura = Temperatura;
-  exports.Celsius = Celsius;
-  exports.Farenheit = Farenheit;
-  exports.Kelvin = Kelvin;
-
+  // exports.Temperatura = Temperatura;
+  // exports.Celsius = Celsius;
+  // exports.Farenheit = Farenheit;
+  // exports.Kelvin = Kelvin;
