@@ -7,7 +7,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+  //  frameworks: ['mocha'],
 
 
     // list of files / patterns to load in the browser
@@ -53,7 +53,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS', 'Firefox', 'Chrome'],
+    browsers: ['Firefox'],
 
     customLaunchers: {
       chromeTravisCI: {
@@ -75,6 +75,6 @@ module.exports = function(config) {
   });
 
   if (process.env.TRAVIS) {
-    config.browsers = ['PhantomJS', 'Firefox', 'chromeTravisCI'];
+    config.browsers = ['Firefox'];
   }
 }
