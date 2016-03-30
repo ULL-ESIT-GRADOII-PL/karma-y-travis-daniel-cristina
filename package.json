@@ -16,7 +16,6 @@
   "devDependencies" : {
     "karma": "~0.12"
   },
-  
   "keywords": [
     "mocha",
     "chai",
