@@ -4,17 +4,17 @@
   "description": "See conversor: http://ull-esit-gradoii-pl.github.io/mocha-y-chai-daniel-cristina/",
   "main": "js/main.js",
   "scripts": {
-    "test": "open test.html",
+    "test": "./node_modules/karma/bin/karma start --browsers Chrome --single-run",
     "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
-    "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.12.2.js",
-    "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run"
+    "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.12.2.js"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/ULL-ESIT-GRADOII-PL/mocha-y-chai-daniel-cristina"
   },
-  "devDependencies" : {
-    "karma": "~0.12"
+  "devDependencies": {
+    "karma": "~0.12",
+    "karma-firefox-launcher": "^0.1.7"
   },
   "keywords": [
     "mocha",
