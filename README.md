@@ -1,4 +1,5 @@
 # Práctica Karma y TRAVIS
+[![Build Status](https://travis-ci.org/alu0100811933/karma-y-travis-daniel-cristina.svg?branch=master)](https://travis-ci.org/alu0100811933/karma-y-travis-daniel-cristina)
 
 Esta es una nueva versión de la práctica de conversión de temperaturas (Kelvin, Celsius, Farenheit) en la que utilizamos Mocha y Chai para realizar
 pruebas en nuestro código. Recordar que el código Switch Smell ha sido eliminado.
