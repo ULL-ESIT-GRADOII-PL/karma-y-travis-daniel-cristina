@@ -38,8 +38,17 @@ module.exports = function(config) {
       'karma-mocha',
       'karma-chai',
       'karma-firefox-launcher',
-      'karma-html2js-preprocessor'
+      'karma-html2js-preprocessor',
+      'karma-phantomjs-launcher',
+      'karma-chrome-launcher'
     ],
+
+    customLaunchers: {
+      Chrome_travis_ci: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
+    },
 
     reporters: ['progress'],
 
@@ -51,7 +60,7 @@ module.exports = function(config) {
 
     autoWatch: true,
 
-    browsers: ['Firefox'],
+    browsers: ['Firefox', 'Chrome_travis_ci', 'PhantomJS'],
 
     captureTimeout: 60000,
 
