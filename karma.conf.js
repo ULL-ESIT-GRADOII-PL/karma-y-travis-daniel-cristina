@@ -42,7 +42,7 @@ module.exports = function(config) {
       'karma-phantomjs-launcher',
       'karma-chrome-launcher'
     ],
-    
+
     customLaunchers: {
       Chrome_travis_ci: {
         base: 'Chrome',
@@ -60,7 +60,7 @@ module.exports = function(config) {
 
     autoWatch: true,
 
-    browsers: ['Firefox', 'Chrome_travis_ci', 'Phantomjs'],
+    browsers: ['Firefox', 'Chrome_travis_ci', 'PhantomJS'],
 
     captureTimeout: 60000,
 
